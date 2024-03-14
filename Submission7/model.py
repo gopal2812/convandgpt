@@ -120,7 +120,7 @@ class Model_3(nn.Module):
             nn.BatchNorm2d(16),
             nn.Conv2d(16, 10, kernel_size=1), #16 >> 16
         )
-        self.avgpool = nn.AdaptiveAvgPool2d(1)  1
+        self.avgpool = nn.AdaptiveAvgPool2d(1)  #1
 
     def forward(self, x):
         x = self.conv1(x)
