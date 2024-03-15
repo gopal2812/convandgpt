@@ -8,8 +8,5 @@ There are three other files model1.ipynb to model3.ipynb which are responsible f
 
 The utils.py file contains the additional methods required for the model training.
 
-
-# Model2 RF Calculation
-
-# Model3 RF Calculation
+# Model RF Calculation
 ![image](https://github.com/gopal2812/convandgpt/assets/39087216/7313a7ee-a126-462d-978c-7c3e1a404484)
