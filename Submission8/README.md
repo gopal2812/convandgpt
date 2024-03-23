@@ -14,6 +14,7 @@ We are presented with a multiclass classification problem on the CIFAR10 dataset
 Use of Residual Connection is also advised.
 
 ## Implementation
+```
 ----------------------------------------------------------------
         Layer (type)               Output Shape         Param #
 ================================================================
@@ -67,6 +68,7 @@ Forward/backward pass size (MB): 2.56
 Params size (MB): 0.15
 Estimated Total Size (MB): 2.72
 ----------------------------------------------------------------
+```
 The above structure with two residual connections is used.
 
 ## Normalization Technique Comparison
