@@ -4,11 +4,11 @@
 This is the fourth course of the deep learning specialization at [Coursera](https://www.coursera.org/specializations/deep-learning) which is moderated by [DeepLearning.ai](http://deeplearning.ai/). The course is taught by Andrew Ng.
 
 # Andrew NG Course Notes Collection
-* [**Part-1 Neural Networks and Deep Learning**](https://github.com/ashishpatel26/Andrew-NG-Notes/blob/master/andrewng-p-1-neural-network-deep-learning.md)
-* [**Part 2 : Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization**](https://github.com/ashishpatel26/Andrew-NG-Notes/blob/master/andrewng-p-2-improving-deep-learning-network.md)
-* [**Part-3: Structuring Machine Learning Projects**](https://github.com/ashishpatel26/Andrew-NG-Notes/blob/master/andrewng-p-3-structuring-ml-projects.md)
-* [**Part-4 :Convolutional Neural Networks**](https://github.com/ashishpatel26/Andrew-NG-Notes/blob/master/andrewng-p-4-convolutional-neural-network.md)
-* [**Part-5 : Sequence Models**](https://www.kaggle.com/ashishpatel26/andrewng-p-5-sequence-models)
+* [**Part-1 Neural Networks and Deep Learning**](https://github.com/gopal2812/convandgpt/blob/master/andrewng-p-1-neural-network-deep-learning.md)
+* [**Part 2 : Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization**](https://github.com/gopal2812/convandgpt/blob/master/andrewng-p-2-improving-deep-learning-network.md)
+* [**Part-3: Structuring Machine Learning Projects**](https://github.com/gopal2812/convandgpt/blob/master/andrewng-p-3-structuring-ml-projects.md)
+* [**Part-4 :Convolutional Neural Networks**](https://github.com/gopal2812/convandgpt/blob/master/andrewng-p-4-convolutional-neural-network.md)
+* [**Part-5 : Sequence Models**](https://www.kaggle.com/gopal2812/convandgpt/blob/master/andrewng-p-5-sequence-models)
 
 ## Table of contents
 
