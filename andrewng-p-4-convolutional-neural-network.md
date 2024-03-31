@@ -375,7 +375,7 @@ Here is the course summary as given on the course [link](https://www.coursera.or
 
   - Named after Alex Krizhevsky who was the first author of this paper. The other authors includes Geoffrey Hinton.
 
-  - The goal for the model was the ImageNet challenge which classifies https://raw.githubusercontent.com/ashishpatel26/DeepLearning.ai-Summary/master/4-%20Convolutional%20Neural%20Networks/Images/ into 1000 classes. Here are the drawing of the model:
+  - The goal for the model was the ImageNet challenge which classifies images into 1000 classes. Here are the drawing of the model:
 
   - ![](https://raw.githubusercontent.com/ashishpatel26/DeepLearning.ai-Summary/master/4-%20Convolutional%20Neural%20Networks/Images//06.png)
 
@@ -604,8 +604,8 @@ Here is the course summary as given on the course [link](https://www.coursera.or
   - You don't have much a lot of data to train a NN on these https://raw.githubusercontent.com/ashishpatel26/DeepLearning.ai-Summary/master/4-%20Convolutional%20Neural%20Networks/Images/.
   - Andrew recommends to go online and download a good NN with its weights, remove the softmax activation layer and put your own one and make the network learn only the new layer while other layer weights are fixed/frozen.
   - Frameworks have options to make the parameters frozen in some layers using `trainable = 0` or `freeze = 0`
-  - One of the tricks that can speed up your training, is to run the pretrained NN without final softmax layer and get an intermediate representation of your https://raw.githubusercontent.com/ashishpatel26/DeepLearning.ai-Summary/master/4-%20Convolutional%20Neural%20Networks/Images/ and save them to disk. And then use these representation to a shallow NN network. This can save you the time needed to run an image through all the layers.
-    - Its like converting your https://raw.githubusercontent.com/ashishpatel26/DeepLearning.ai-Summary/master/4-%20Convolutional%20Neural%20Networks/Images/ into vectors.
+  - One of the tricks that can speed up your training, is to run the pretrained NN without final softmax layer and get an intermediate representation of your and save them to disk. And then use these representation to a shallow NN network. This can save you the time needed to run an image through all the layers.
+    - Its like converting your into vectors.
 - Another example:
   - What if in the last example you have a lot of pictures for your cats.
   - One thing you can do is to freeze few layers from the beginning of the pretrained network and learn the other weights in the network.
@@ -774,7 +774,7 @@ Here is the course summary as given on the course [link](https://www.coursera.or
 
 - We will use a Conv net to solve the object detection problem using a technique called the sliding windows detection algorithm.
 - For example lets say we are working on Car object detection.
-- The first thing, we will train a Conv net on cropped car https://raw.githubusercontent.com/ashishpatel26/DeepLearning.ai-Summary/master/4-%20Convolutional%20Neural%20Networks/Images/ and non car https://raw.githubusercontent.com/ashishpatel26/DeepLearning.ai-Summary/master/4-%20Convolutional%20Neural%20Networks/Images/.
+- The first thing, we will train a Conv net on cropped car and non car https://raw.githubusercontent.com/ashishpatel26/DeepLearning.ai-Summary/master/4-%20Convolutional%20Neural%20Networks/Images/.
   - ![](https://raw.githubusercontent.com/ashishpatel26/DeepLearning.ai-Summary/master/4-%20Convolutional%20Neural%20Networks/Images//18.png)
 - After we finish training of this Conv net we will then use it with the sliding windows technique.
 - Sliding windows detection algorithm:
@@ -883,7 +883,7 @@ Here is the course summary as given on the course [link](https://www.coursera.or
 - You may have two or more anchor boxes but you should know their shapes.
   - how do you choose the anchor boxes and people used to just choose them by hand. Maybe five or ten anchor box shapes that spans a variety  of shapes that cover the types of objects you seem to detect frequently.
   - You may also use a k-means algorithm on your dataset to specify that.
-- Anchor boxes allows your algorithm to specialize, means in our case to easily detect wider https://raw.githubusercontent.com/ashishpatel26/DeepLearning.ai-Summary/master/4-%20Convolutional%20Neural%20Networks/Images/ or taller ones.
+- Anchor boxes allows your algorithm to specialize, means in our case to easily detect wider or taller ones.
 
 ### YOLO Algorithm
 
@@ -1204,10 +1204,10 @@ Here is the course summary as given on the course [link](https://www.coursera.or
   - Then
   - `||f(A) - f(P)||^2  - ||f(A) - f(N)||^2 + alpha <= 0`
 - Final Loss function:
-  - Given 3 https://raw.githubusercontent.com/ashishpatel26/DeepLearning.ai-Summary/master/4-%20Convolutional%20Neural%20Networks/Images/ (A, P, N)
+  - Given 3 (A, P, N)
   - `L(A, P, N) = max (||f(A) - f(P)||^2  - ||f(A) - f(N)||^2 + alpha , 0)`
   - `J = Sum(L(A[i], P[i], N[i]) , i)` for all triplets of https://raw.githubusercontent.com/ashishpatel26/DeepLearning.ai-Summary/master/4-%20Convolutional%20Neural%20Networks/Images/.
-- You need multiple https://raw.githubusercontent.com/ashishpatel26/DeepLearning.ai-Summary/master/4-%20Convolutional%20Neural%20Networks/Images/ of the same person in your dataset. Then get some triplets out of your dataset. Dataset should be big enough.
+- You need multiple of the same person in your dataset. Then get some triplets out of your dataset. Dataset should be big enough.
 - Choosing the triplets A, P, N:
   - During training if A, P, N are chosen randomly (Subjet to A and P are the same and A and N aren't the same) then one of the problems this constrain is easily satisfied 
     - `d(A, P) + alpha <= d (A, N)` 
@@ -1340,7 +1340,7 @@ Here is the course summary as given on the course [link](https://www.coursera.or
 
 #### 1D and 3D Generalizations
 
-- So far we have used the Conv nets for https://raw.githubusercontent.com/ashishpatel26/DeepLearning.ai-Summary/master/4-%20Convolutional%20Neural%20Networks/Images/ which are 2D.
+- So far we have used the Conv nets for which are 2D.
 - Conv nets can work with 1D and 3D data as well.
 - An example of 1D convolution:
   - Input shape (14, 1)
