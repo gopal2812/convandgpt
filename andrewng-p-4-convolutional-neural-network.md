@@ -70,7 +70,7 @@ This is the fourth course of the deep learning specialization at [Coursera](http
 
 Here is the course summary as given on the course [link](https://www.coursera.org/learn/convolutional-neural-networks):
 
-> This course will teach you how to build convolutional neural networks and apply it to image data. Thanks to deep learning, computer vision is working far better than just two years ago, and this is enabling numerous exciting applications ranging from safe autonomous driving, to accurate face recognition, to automatic reading of radiology https://raw.githubusercontent.com/ashishpatel26/DeepLearning.ai-Summary/master/4-%20Convolutional%20Neural%20Networks/Images/. 
+> This course will teach you how to build convolutional neural networks and apply it to image data. Thanks to deep learning, computer vision is working far better than just two years ago, and this is enabling numerous exciting applications ranging from safe autonomous driving, to accurate face recognition, to automatic reading of radiology 
 >
 > You will:
 > - Understand how to build a convolutional neural network, including recent variations such as residual networks.
@@ -102,7 +102,7 @@ Here is the course summary as given on the course [link](https://www.coursera.or
     - Detect object and localize them.
   - Neural style transfer
     - Changes the style of an image using another image.
-- One of the challenges of computer vision problem that https://raw.githubusercontent.com/ashishpatel26/DeepLearning.ai-Summary/master/4-%20Convolutional%20Neural%20Networks/Images/ can be so large and we want a fast and accurate algorithm to work with that.
+- One of the challenges of computer vision problem that oarameters can be so large and we want a fast and accurate algorithm to work with that.
   - For example, a `1000x1000` image will represent 3 million feature/input to the full connected neural network. If the following hidden layer contains 1000, then we will want to learn weights of the shape `[1000, 3 million]` which is 3 billion parameter only in the first layer and thats so computationally expensive!
 - One of the solutions is to build this using **convolution layers** instead of the **fully connected layers**.
 
@@ -192,7 +192,7 @@ Here is the course summary as given on the course [link](https://www.coursera.or
 
 ### Convolutions over volumes
 
-- We see how convolution works with 2D https://raw.githubusercontent.com/ashishpatel26/DeepLearning.ai-Summary/master/4-%20Convolutional%20Neural%20Networks/Images/, now lets see if we want to convolve 3D https://raw.githubusercontent.com/ashishpatel26/DeepLearning.ai-Summary/master/4-%20Convolutional%20Neural%20Networks/Images/ (RGB image)
+- We see how convolution works with 2D , now lets see if we want to convolve 3D  (RGB image)
 - We will convolve an image of height, width, # of channels with a filter of a height, width, same # of channels. Hint that the image number channels and the filter number of channels are the same.
 - We can call this as stacked filters for each channel!
 - Example:
@@ -911,7 +911,7 @@ Here is the course summary as given on the course [link](https://www.coursera.or
     - ![](https://raw.githubusercontent.com/ashishpatel26/DeepLearning.ai-Summary/master/4-%20Convolutional%20Neural%20Networks/Images//30.png)
   - We first initialize all of them to zeros and ?, then for each label and rectangle choose its closest grid point then the shape to fill it and then the best anchor point based on the IOU. so that the shape of Y for one image should be `[HeightOfGrid, WidthOfGrid,16]`
 
-- Train the labeled https://raw.githubusercontent.com/ashishpatel26/DeepLearning.ai-Summary/master/4-%20Convolutional%20Neural%20Networks/Images/ on a Conv net. you should receive an output of `[HeightOfGrid, WidthOfGrid,16]` for our case.
+- Train the labeled on a Conv net. you should receive an output of `[HeightOfGrid, WidthOfGrid,16]` for our case.
 
 - To make predictions, run the Conv net on an image and run Non-max suppression algorithm for each class you have in our case there are 3 classes.
 
@@ -1151,7 +1151,7 @@ Here is the course summary as given on the course [link](https://www.coursera.or
 
 #### What is face recognition?
 
-- Face recognition system identifies a person's face. It can work on both https://raw.githubusercontent.com/ashishpatel26/DeepLearning.ai-Summary/master/4-%20Convolutional%20Neural%20Networks/Images/ or videos.
+- Face recognition system identifies a person's face. It can work on both  or videos.
 - **<u>Liveness detection</u>** within a video face recognition system prevents the network from identifying a face in an image. It can be learned by supervised deep learning using a dataset for live human and in-live human and sequence learning.
 - Face verification vs. face recognition:
   - Verification:
@@ -1232,7 +1232,7 @@ Here is the course summary as given on the course [link](https://www.coursera.or
   - The NN here is Siamese means the top and bottom convs has the same parameters.
 - The paper for this work: [[Taigman et. al., 2014. DeepFace closing the gap to human level performance]](https://www.cv-foundation.org/openaccess/content_cvpr_2014/html/Taigman_DeepFace_Closing_the_2014_CVPR_paper.html)
 - A good performance/deployment trick:
-  - Pre-compute all the https://raw.githubusercontent.com/ashishpatel26/DeepLearning.ai-Summary/master/4-%20Convolutional%20Neural%20Networks/Images/ that you are using as a comparison to the vector f(x(j))
+  - Pre-compute all that you are using as a comparison to the vector f(x(j))
   - When a new image that needs to be compared, get its vector f(x(i)) then put it with all the pre computed vectors and pass it to the sigmoid function.
 - This version works quite as well as the triplet loss function.
 - Available implementations for face recognition using deep learning includes:
@@ -1261,7 +1261,7 @@ Here is the course summary as given on the course [link](https://www.coursera.or
   - It turns out that layer 1 are learning the low level representations like colors and edges.
 - You will find out that each layer are learning more complex representations.
   - ![](https://raw.githubusercontent.com/ashishpatel26/DeepLearning.ai-Summary/master/4-%20Convolutional%20Neural%20Networks/Images//39.png)
-- The first layer was created using the weights of the first layer. Other https://raw.githubusercontent.com/ashishpatel26/DeepLearning.ai-Summary/master/4-%20Convolutional%20Neural%20Networks/Images/ are generated using the receptive field in the image that triggered the neuron to be max.
+- The first layer was created using the weights of the first layer. Other  are generated using the receptive field in the image that triggered the neuron to be max.
 - [[Zeiler and Fergus., 2013, Visualizing and understanding convolutional networks]](https://arxiv.org/abs/1311.2901)
 - A good explanation on how to get **receptive field** given a layer:
   - ![](https://raw.githubusercontent.com/ashishpatel26/DeepLearning.ai-Summary/master/4-%20Convolutional%20Neural%20Networks/Images//receptiveField.png)
