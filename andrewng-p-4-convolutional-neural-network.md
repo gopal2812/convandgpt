@@ -601,7 +601,7 @@ Here is the course summary as given on the course [link](https://www.coursera.or
 - The pretrained models might have trained on a large datasets like ImageNet, Ms COCO, or pascal and took a lot of time to learn those parameters/weights with optimized hyperparameters. This can save you a lot of time.
 - Lets see an example:
   - Lets say you have a cat classification problem which contains 3 classes Tigger, Misty and neither.
-  - You don't have much a lot of data to train a NN on these https://raw.githubusercontent.com/ashishpatel26/DeepLearning.ai-Summary/master/4-%20Convolutional%20Neural%20Networks/Images/.
+  - You don't have much a lot of data to train a NN on these 
   - Andrew recommends to go online and download a good NN with its weights, remove the softmax activation layer and put your own one and make the network learn only the new layer while other layer weights are fixed/frozen.
   - Frameworks have options to make the parameters frozen in some layers using `trainable = 0` or `freeze = 0`
   - One of the tricks that can speed up your training, is to run the pretrained NN without final softmax layer and get an intermediate representation of your and save them to disk. And then use these representation to a shallow NN network. This can save you the time needed to run an image through all the layers.
@@ -628,7 +628,7 @@ Here is the course summary as given on the course [link](https://www.coursera.or
   - Color shifting.
     - For example, we add to R, G, and B some distortions that will make the image identified as the same for the human but is different for the computer.
     - In practice the added value are pulled from some probability distribution and these shifts are some small.
-    - Makes your algorithm more robust in changing colors in https://raw.githubusercontent.com/ashishpatel26/DeepLearning.ai-Summary/master/4-%20Convolutional%20Neural%20Networks/Images/. 
+    - Makes your algorithm more robust in changing colors in  
     - There are an algorithm which is called ***PCA color augmentation*** that decides the shifts needed automatically.
 - Implementing distortions during training:
   - You can use a different CPU thread to make you a distorted mini batches while you are training your NN.
@@ -774,7 +774,7 @@ Here is the course summary as given on the course [link](https://www.coursera.or
 
 - We will use a Conv net to solve the object detection problem using a technique called the sliding windows detection algorithm.
 - For example lets say we are working on Car object detection.
-- The first thing, we will train a Conv net on cropped car and non car https://raw.githubusercontent.com/ashishpatel26/DeepLearning.ai-Summary/master/4-%20Convolutional%20Neural%20Networks/Images/.
+- The first thing, we will train a Conv net on cropped car and non car 
   - ![](https://raw.githubusercontent.com/ashishpatel26/DeepLearning.ai-Summary/master/4-%20Convolutional%20Neural%20Networks/Images//18.png)
 - After we finish training of this Conv net we will then use it with the sliding windows technique.
 - Sliding windows detection algorithm:
@@ -1206,7 +1206,7 @@ Here is the course summary as given on the course [link](https://www.coursera.or
 - Final Loss function:
   - Given 3 (A, P, N)
   - `L(A, P, N) = max (||f(A) - f(P)||^2  - ||f(A) - f(N)||^2 + alpha , 0)`
-  - `J = Sum(L(A[i], P[i], N[i]) , i)` for all triplets of https://raw.githubusercontent.com/ashishpatel26/DeepLearning.ai-Summary/master/4-%20Convolutional%20Neural%20Networks/Images/.
+  - `J = Sum(L(A[i], P[i], N[i]) , i)` for all triplets 
 - You need multiple of the same person in your dataset. Then get some triplets out of your dataset. Dataset should be big enough.
 - Choosing the triplets A, P, N:
   - During training if A, P, N are chosen randomly (Subjet to A and P are the same and A and N aren't the same) then one of the problems this constrain is easily satisfied 
@@ -1218,7 +1218,7 @@ Here is the course summary as given on the course [link](https://www.coursera.or
     - This can be achieved by for example same poses!
     - Find more at the paper.
 - Details are in this paper [[Schroff et al.,2015, FaceNet: A unified embedding for face recognition and clustering]](https://arxiv.org/abs/1503.03832)
-- Commercial recognition systems are trained on a large datasets like 10/100 million https://raw.githubusercontent.com/ashishpatel26/DeepLearning.ai-Summary/master/4-%20Convolutional%20Neural%20Networks/Images/.
+- Commercial recognition systems are trained on a large datasets like 10/100 million 
 - There are a lot of pretrained models and parameters online for face recognition.
 
 #### Face Verification and Binary Classification
@@ -1293,7 +1293,7 @@ Here is the course summary as given on the course [link](https://www.coursera.or
   - If we choose `l` to be small (like layer 1), we will force the network to get similar output to the original content image.
   - In practice `l` is not too shallow and not too deep but in the middle.
 - Use pre-trained ConvNet. (E.g., VGG network)
-- Let `a(c)[l]` and `a(G)[l]` be the activation of layer `l` on the https://raw.githubusercontent.com/ashishpatel26/DeepLearning.ai-Summary/master/4-%20Convolutional%20Neural%20Networks/Images/.
+- Let `a(c)[l]` and `a(G)[l]` be the activation of layer `l`
 - If `a(c)[l]` and `a(G)[l]` are similar then they will have the same content
   - `J(C, G) at a layer l = 1/2 || a(c)[l] - a(G)[l] ||^2`
 
