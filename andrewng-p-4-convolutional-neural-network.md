@@ -476,7 +476,7 @@ Here is the course summary as given on the course [link](https://www.coursera.or
 
 - Using a skip-connection helps the gradient to backpropagate and thus helps you to train deeper networks
 
-- Lets take a look at ResNet on https://raw.githubusercontent.com/ashishpatel26/DeepLearning.ai-Summary/master/4-%20Convolutional%20Neural%20Networks/Images/.
+- Lets take a look at ResNet on
 
   - Here are the architecture of **ResNet-34**:
   - ![](https://raw.githubusercontent.com/ashishpatel26/DeepLearning.ai-Summary/master/4-%20Convolutional%20Neural%20Networks/Images//resNet.jpg)
