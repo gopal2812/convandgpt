@@ -5,7 +5,7 @@ import torch.nn.functional as F
 class CustomResNet(nn.Module):
     # This defines the structure of the NN.
     def __init__(self, dropout_percentage=0, norm="bn", num_groups=2, padding=1):
-        super(Net, self).__init__()
+        super(CustomResNet, self).__init__()
 
         if norm == "bn":
             self.norm = nn.BatchNorm2d
