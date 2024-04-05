@@ -246,7 +246,7 @@ From the above figure we can see that the optimal lr is found using the steepest
 
 ```python
 from torch_lr_finder import LRFinder
-model = Net(dropout_percentage=0.02, norm="bn").to(device)
+model = CustomResNet(dropout_percentage=0.02, norm="bn").to(device)
 optimizer = optim.Adam(model.parameters(), lr=0.001, weight_decay=1e-4)
 criterion = F.cross_entropy
 
